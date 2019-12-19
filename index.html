@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,82 +10,129 @@
     <meta name="author" content="">
     <title>Burbyte</title>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <style>
-          h1{
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Rock+Salt&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .title {
+            font-family: 'Rock Salt', cursive;
+            text-align: center;
+        }
+
+        .subtitle {
             font-family: 'Ubuntu', sans-serif;
-          }
-          p{
+            text-align: center;
+        }
+
+        .project-button {
             font-family: 'Open Sans', sans-serif;
-          }
-          h4{
+            text-align: center;
+        }
+
+        .open-sans-font {
             font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-          }
-          /*https://codepen.io/P1N2O/pen/pyBNzX*/
-          body {
-	margin: 0;
-	width: 100%;
-	height: 100vh;
-	font-family: "Exo", sans-serif;
-	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradientBG 15s ease infinite;
-}
-@keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-      </style>
+        }
+
+        .background {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .jumbotron {
+            height: 90vh;
+        }
+
+        .image-footer {
+            width: 50px;
+            height: auto;
+            object-fit: scale-down;
+            -webkit-filter: brightness(0%); /* Safari 6.0 - 9.0 */
+            filter: brightness(0%);
+        }
+        /*https://codepen.io/P1N2O/pen/pyBNzX*/
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
     <div class="container">
-    <div class="header clearfix">&nbsp;</div>
-      <div class="jumbotron">
+        <div class="header clearfix">&nbsp;</div>
+        <div class="jumbotron background">
+            <h1 class="title">Sam Burba</h1>
+            <h4 class="subtitle">Software Engineer</h4>
+            <hr />
             <div class="row">
-                <h1>Sam Burba</h1> 
+                <div class="col-lg-6">
+                    <h4>Education</h4>
+                    <p>California State University, Chico</p>
+                    <h4>Experience</h4>
+                    <p>Lab Assistant, California State University, Chico (2017 - 2018)</p>
+                    <p>Software Engineer, Chevron (2018 - Present)</p>
+                    <h4>Certifications</h4>
+                    <p>Servicenow Certified System Administrator (2019)</p>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Languages & Technologies</h4>
+                    <ul>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Go</li>
+                        <li>ServiceNow</li>
+                    </ul>
+                </div>
+
             </div>
-            <h4>Software Engineer</h4>
-            <h4>B.S Computer Science, California State University Chico</h4>
-            <a class="btn btn-lg btn-outline-dark" href="https://github.com/samburba" role="button">Projects</a> &nbsp;
-            <a class="btn btn-lg btn-outline-dark" href="https://github.com/samburba" role="button">Contact</a>
-      </div>
-        <div class="row">
-        <div class="col-lg-6">
-            <h4>Education</h4>
-            <p>California State University, Chico</p>
-            <h4>Experience</h4>
-            <p>Lab Assistant, California State University, Chico (2017 - 2018)</p>
-            <p>Software Engineer, Chevron (2018 - Present)</p>
-            <h4>Certifications</h4>
-            <p>Servicenow Certified System Administrator (2019)</p>
+            <!--
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn btn-lg btn-outline-dark project-button" href="https://github.com/samburba"
+                        role="button">Github</a>
+                </div>
+            </div>
+        -->
+            <!--footer-->
+            <div style="padding-left: 44%;">
+                    <a href="https://github.com/samburba"><img class="image-footer"
+                            src="/static/images/GitHub-Mark-120px-plus.png" alt="Github" /></a>
+                    <a href="https://twitter.com/BurbaSam"><img class="image-footer"
+                            src="/static/images/Twitter_Social_Icon_Circle_White.png" alt="Twitter" /></a>
+                </div>
         </div>
-        <div class="col-lg-6">
-            <h4>Languages/Technologies</h4>
-            <ul>
-                <li>C++</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>Go</li>
-                <li>ServiceNow</li>
-            </ul>
-        </div>
-      </div>
-    </div> 
+    </div>
     <!-- /container -->
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

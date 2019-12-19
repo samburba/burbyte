@@ -3,6 +3,9 @@ const port = 5000,
       path = require('path')
       app = express();
 
+     // app.use(express.static('public'));
+      app.use('/static', express.static(path.join(__dirname, 'public')))
+
 // Listen on port 5000
 app.listen(port, () => {
   console.log(`Server is running on port 5000
@@ -24,13 +27,4 @@ app.get("/", (req, res) => {
 
 app.get('/index.html', (req, res) => {
     res.redirect('/');
-});
-
-app.get("/posts", (req, res) => {
-	console.log("Getting posts...");
-  //res.sendFile(path.join(__dirname + '/posts.json'));
-  res.json([
-    { name: "William", location: "Abu Dhabi" },
-    { name: "Chris", location: "Vegas" }
-  ]);
 });
