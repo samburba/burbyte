@@ -1,0 +1,57 @@
+        .title {
+            font-family: 'Rock Salt', cursive;
+            text-align: center;
+            color: #454545;
+        }
+
+        .subtitle {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            color: #454545;
+        }
+
+        .list-title {
+            font-family: 'Ubuntu', sans-serif;
+            color: #454545;
+        }
+
+        .list {
+            font-family: 'Open Sans', sans-serif;
+            color: #454545;
+        }
+
+        .jumbotron {
+            height: 100vh;
+            background: rgba(238, 238, 238, 0.7);
+        }
+
+        .image-footer {
+            width: 50px;
+            height: auto;
+            object-fit: scale-down;
+            -webkit-filter: brightness(0%); /* Safari 6.0 - 9.0 */
+            filter: brightness(0%);
+        }
+        /*https://codepen.io/P1N2O/pen/pyBNzX*/
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
