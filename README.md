@@ -1,3 +1,4 @@
-# https://burbyte.com
+[![Build Status](https://travis-ci.org/samburba/burbyte.svg?branch=master)](https://travis-ci.org/samburba/burbyte)
+# [burbyte.com](https://burbyte.com)
 
-Personal website / portfolio. Created with node.js. Deployed using Zeit Now.
+Personal website / portfolio.
